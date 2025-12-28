@@ -1,56 +1,77 @@
 # Kubik – Ride Booking Application
 
-**Kubik** is a modern ride-booking platform that allows users to book rides with verified drivers (captains) for convenient and reliable transportation. Built with **React** and **Node.js**, it offers real-time tracking, secure payments, and a seamless booking experience.
+Kubik is a full-stack ride booking platform that enables users to book rides with verified drivers. It includes real-time tracking, secure authentication, and an intuitive booking experience. The application demonstrates modern web development with real-time communication and API integrations.
 
-## 🚀 Features
+---
 
-### 👤 For Users
-- Easy ride booking with location search and autocomplete
-- Real-time ride tracking with live driver location
+## Overview
+
+Kubik is built using the MERN stack and supports real-time features such as live driver location tracking and ride status updates using Socket.io. The backend handles authentication, ride management, and API integrations for mapping and payments.
+
+---
+
+## Features
+
+### User Functionality
+- Search and select pickup and drop-off locations
+- Real-time driver tracking and ride updates
 - Multiple vehicle categories
-- Fare estimation before booking
-- Secure online payment via Razorpay
+- Fare estimates before booking
 - Ride history and digital receipts
-- User profile management
+- Profile management
 
-### 🚗 For Drivers (Captains)
-- Real-time ride request notifications
+### Driver (Captain) Functionality
+- Live ride request notifications
 - Navigation assistance with Google Maps
-- Ride management dashboard
-- Earnings tracking and history
-- Profile and vehicle management
-- Location sharing with users
-- Ride status updates
-- Payment collection system
+- Earnings tracking and ride history
+- Real-time location sharing with users
+- Ride status updates and payment notifications
 
-## 🛠 Tech Stack
+---
+
+## Tech Stack
 
 ### Frontend
-- React.js with Vite
-- React Router (navigation)
-- Tailwind CSS (responsive design)
-- GSAP (animations)
-- Socket.io (real-time communication)
-- Google Maps API (location services)
-- Razorpay (secure payment integration)
+- React with Vite
+- Tailwind CSS for responsive UI
+- React Router for navigation
+- Google Maps API for location services
+- Socket.io for real-time communication
 
 ### Backend
 - Node.js with Express
-- MongoDB (database)
-- Socket.io (real-time communication)
-- JWT (authentication)
-- Google Maps API (geolocation)
-- Razorpay API (payment processing)
+- MongoDB for data storage
+- Socket.io for real-time updates
+- JWT for authentication
+- Google Maps API for geolocation services
+- Razorpay API for payment processing
 
-## ⚙️ Prerequisites
+---
 
-Before starting, ensure you have:
+## Live Demo
+
+**Frontend:** https://kuber-tau.vercel.app  
+> Note: Some external APIs (Google Maps, Razorpay) are on limited free plans and may require your own API keys if usage limits are exceeded.
+
+---
+
+## Installation & Setup
+
+### Prerequisites
 - Node.js (v14 or higher)
 - MongoDB
 - Google Maps API key
 - Razorpay API keys
 
-## 📦 Installation
+### Steps
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/Kunal-Gupta28/Kubik.git
+cd Kubik
+
+
+## Installation
 
 ### 1. Clone the repository
 ```bash
@@ -88,7 +109,7 @@ VITE_RAZORPAY_API_KEY=your_razorpay_api_key
 VITE_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
 ```
 
-## 🧪 Running the Application
+## Running the Application
 
 ### Start backend server
 ```bash
@@ -125,41 +146,3 @@ kubik/
 │   └── server.js              # Server entry point
 └── README.md
 ```
-
-## 🚕 Ride Booking Flow
-
-1. User enters pickup and destination
-2. Vehicle options with fare estimates are shown
-3. User selects a vehicle and confirms booking
-4. System finds nearby drivers
-5. A driver accepts the ride
-6. Real-time tracking begins
-7. Payment is processed securely upon ride completion
-
-## 🔁 Real-time Features
-
-- Live user-driver location tracking
-- Ride status updates
-- Chat between user and driver
-- Payment status notifications
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 🙏 Acknowledgments
-
-- **Google Maps API** – Navigation and geolocation
-- **Razorpay** – Payment gateway
-- **Socket.io** – Real-time communication
-- All contributors and open-source libraries that made this project possible
-
-## 📬 Contact
-
-**Kunal Gupta**  
-📧 kunal.gupta.91165@gmail.com  
-�� Project: [GitHub - Kubik](https://github.com/Kunal-Gupta28/kubik)
